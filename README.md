@@ -41,19 +41,22 @@ Class labels
 
 https://github.com/pjreddie/darknet/blob/master/data/coco.names
 
-Place them in the models/ directory:
+## Model Files
 
-project/
+Place them in the `models/` directory:
+
+```
+opencv-yolo-object-detection/
 │
 ├── camera.py
+├── download_models.py
+├── requirements.txt
+├── README.md
 ├── models/
-│   ├── yolov3-tiny.weights
-│   ├── yolov3-tiny.cfg
-│   └── coco.names
+├── assets/
+│   └── demo.gif
+└── videos/
+```
 
-
-Alternatively you may download the above files by running the download_models.py file 
-and they will automatically be placed into the correct location 
-(note that these files will require around 270MB of space).
-
-
+Alternatively you may download the above files by running the `download_models.py` script.
+They will automatically be placed in the correct location (note that these files require ~270MB of disk space).
